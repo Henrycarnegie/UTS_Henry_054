@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+
+:root{
+    --main: #8eaccd;
+    --background-color: #d2e0fb;
+    --neutral: #efebe2; 
+    --black: #000;
+    --white: #ffffff;
+    --main: #486E98;
+    --body-color: #cce0fd;
+    --highlight: #d2e0fb;
+    --card-text: #d90750;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--main);
+    justify-content: center;
+}
+header{
+    background-color: var(--background-color);
+    height: auto;
+    width: 100%;
+}
+.header-container{
+    height: 80px;
+    align-items: center;
+}
+.navbar{
+    margin: 15px;
+    margin-top: 0;
+    padding: 15px 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar img{
+    width: 130px;
+    height: 50px;
+}
+.navbarItem{
+    display: flex;
+    align-items: center;
+}
+.navbar .navbarItem ul{
+    display: flex;
+    text-align: center;
+    justify-content: end;
+}
+.navbarItem ul li{
+    max-width: max-content;
+    list-style: none;
+}
+.navbarItem ul li a{
+    width: auto;
+    margin: 0 30px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    transition: all 0.2s ease;
+}
+.navbarItem a:hover{
+    transform: scale(1.1);
+    border-bottom: 3px solid var(--main);
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 5px solid var(--main);
+    margin-bottom: 15px;
+}
+.form-container{
+    background-color: var(--background-color);
+    margin: 15rem 20rem 20rem 20rem;
+    padding: 5rem;
+    width: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-detail .input-box{
+    width: 300px;
+    margin-bottom: 15px;
+}
+.input-box label{
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 12px;
+    border-right-width: 2px;
+    border-bottom-width: 3px;
+    transition: all 0.3 ease;
+}
+.submit-button{
+    width: auto;
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.form-detail .input-box input:focus{
+    border-color: var(--main);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="style/style_form.css" rel="stylesheet"  type="text/css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="navbar">
+                <a href="index.html"><img src="assets/Logo_black.png" alt="Logo CGTS"></a>
+                <div class="navbarItem">
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="display.html">Tabel</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="form-container">
+        <h3>Formulir</h3>
+        <form id="myForm" action="display.html" method="get">
+            <div class="form-input">
+                <div class="form-detail">
+                    <div class="input-box">
+                        <label for="nama">Nama </label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukan nama anda" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="nim">Nim </label>
+                        <input type="text" id="nim" name="nim" placeholder="Masukan nama anda" required>
+                    </div>
+                    <div class="input-box">    
+                        <label for="programStudi">Program Studi </label>
+                        <input type="text" id="programStudi" name="programStudi" placeholder="Masukan Program studi anda" required>
+                    </div>
+                    <div class="input-box">    
+                        <label for="Alamat">Alamat </label>
+                        <input type="text" id="alamat" name="alamat" placeholder="Masukan alamat anda" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email" >Email </label>
+                        <input type="email" id="email" name="email" placeholder="Masukan email anda" required>
+                    </div>
+                    <div class="input-box">    
+                        <label for="password">Password </label>
+                        <input type="password" id="password" name="password" placeholder="Masukan password anda" required>
+                    </div>
+                    <div class="input-box">    
+                        <label for="tanggal">Tanggal Lahir </label>
+                        <input type="date" id="tanggalLahir">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="jenisKelamin">
+                        <label for="jenisKelamin">Jenis Kelamin </label>
+                        <select id="jenisKelamin" name="jenisKelamin">
+                            <option>Laki-Laki</option>
+                            <option>Perempuan</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="submit" onclick="addData()" class="submit-button">
+            </div>
+        </form>
+    </div>    
+    <!-- <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Mencegah formulir dikirimkan
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('nim').value;
+
+            // Menyimpan data ke localStorage untuk mengaksesnya pada halaman tabel
+            localStorage.setItem('name', name);
+            localStorage.setItem('nim', nim);
+
+            // Pindah ke halaman tabel
+            window.location.href = 'form_response.html';
+        });
+    </script>  -->
+    <script src="form.js"></script>
+</body>
+</html>

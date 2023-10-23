@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+
+:root{
+    --neutral: #efebe2; 
+    --black: #000;
+    --white: #ffffff;
+    --main: #486E98;
+    --body-color: #cce0fd;
+    --tabel-container1: #43c5c5;
+    --tabel-container2: #7543c5;
+    --card-text: #d90750;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--body-color);
+}
+header{
+    background-color: var(--main);
+    height: auto;
+    width: 100%;
+}
+.header-container{
+    height: 70px;
+    align-items: center;
+}
+.navbar{
+    margin: 15px;
+    margin-top: 0;
+    padding: 15px 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar img{
+    width: 130px;
+    height: 50px;
+}
+.navbarItem{
+    display: flex;
+    align-items: center;
+}
+.navbar .navbarItem ul{
+    display: flex;
+    text-align: center;
+    justify-content: end;
+}
+.navbarItem ul li{
+    max-width: max-content;
+    list-style: none;
+}
+.navbarItem ul li a{
+    width: auto;
+    margin: 0 30px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+    transition: all 0.2s ease;
+}
+.navbarItem a:hover{
+    transform: scale(1.1);
+    border-bottom: 3px solid var(--body-color);
+}
+.display-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 500px;
+}
+.display-container h3{
+    font-size: 25px;
+    display: block;
+    text-align: right;
+    color: var(--black);
+    border-bottom: 3px dotted var(--black);
+}
+.tabel{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--main);
+}
+table{
+    margin: 20px;
+    padding-top: 10px;
+
+}
+thead th, tbody td{
+    border: 1px solid var(--black);
+    border-collapse: collapse;
+}
+tr{
+    background-color: #e4c410;
+}
+tr th{
+    padding: 20px 10px;
+    color: var(--white);
+}
+tr td{
+    padding: 20px 10px;
+    color: var(--white);
+}
+tbody tr:nth-child(even){
+    background-color: var(--tabel-container1);
+}
+tbody tr:nth-child(odd){
+    background-color: var(--tabel-container2);
+}
